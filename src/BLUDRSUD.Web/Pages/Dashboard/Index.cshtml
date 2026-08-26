@@ -1,0 +1,106 @@
+@page "/Dashboard"
+@model BLUDRSUD.Web.Pages.Dashboard.IndexModel
+@{
+    ViewData["Title"] = "Dashboard";
+    ViewData["Breadcrumb"] = "Dashboard";
+}
+
+<!-- Top KPI cards (spec section 22) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+    <div class="bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+        <div class="text-xs text-slate-500 uppercase tracking-wide">Total Pendapatan</div>
+        <div class="text-2xl font-semibold text-slate-800 mt-1">Rp 0</div>
+        <div class="text-[11px] text-amber-600 mt-1">Phase 2 &mdash; dari General Ledger</div>
+    </div>
+    <div class="bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+        <div class="text-xs text-slate-500 uppercase tracking-wide">Total Beban</div>
+        <div class="text-2xl font-semibold text-slate-800 mt-1">Rp 0</div>
+        <div class="text-[11px] text-amber-600 mt-1">Phase 2 &mdash; dari General Ledger</div>
+    </div>
+    <div class="bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+        <div class="text-xs text-slate-500 uppercase tracking-wide">Surplus / Defisit</div>
+        <div class="text-2xl font-semibold text-slate-800 mt-1">Rp 0</div>
+        <div class="text-[11px] text-amber-600 mt-1">Phase 2 &mdash; Laporan Operasional</div>
+    </div>
+    <div class="bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+        <div class="text-xs text-slate-500 uppercase tracking-wide">Kas &amp; Bank</div>
+        <div class="text-2xl font-semibold text-slate-800 mt-1">Rp 0</div>
+        <div class="text-[11px] text-amber-600 mt-1">Phase 2 &mdash; akun 1101 &amp; 1102</div>
+    </div>
+</div>
+
+<!-- Second row: dimensions / master status -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
+    <div class="bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+        <div class="flex items-center justify-between mb-3">
+            <h3 class="text-sm font-semibold text-slate-700">Status Master Data</h3>
+            <span class="text-[11px] px-2 py-0.5 bg-emerald-50 text-emerald-700 rounded">Phase 1</span>
+        </div>
+        <dl class="text-sm space-y-2">
+            <div class="flex justify-between"><dt class="text-slate-500">Chart of Accounts</dt><dd class="font-medium">@Model.AccountCount <span class="text-slate-400">(@Model.ActiveAccounts aktif)</span></dd></div>
+            <div class="flex justify-between"><dt class="text-slate-500">Accounting Periods</dt><dd class="font-medium">@Model.PeriodCount <span class="text-slate-400">(@Model.OpenPeriods open)</span></dd></div>
+            <div class="flex justify-between"><dt class="text-slate-500">Organisasi</dt><dd class="font-medium">@Model.OrganizationCount</dd></div>
+            <div class="flex justify-between"><dt class="text-slate-500">Cost Centers</dt><dd class="font-medium">@Model.CostCenterCount</dd></div>
+            <div class="flex justify-between"><dt class="text-slate-500">Fund Sources</dt><dd class="font-medium">@Model.FundSourceCount</dd></div>
+        </dl>
+    </div>
+
+    <div class="bg-white border border-slate-200 rounded-lg p-4 shadow-sm lg:col-span-2">
+        <div class="flex items-center justify-between mb-3">
+            <h3 class="text-sm font-semibold text-slate-700">Tren Pendapatan vs Beban (placeholder)</h3>
+            <span class="text-[11px] text-slate-400">Phase 2 &mdash; dari GL</span>
+        </div>
+        <div class="h-56"><canvas id="trendChart"></canvas></div>
+    </div>
+</div>
+
+<!-- Disclaimer -->
+<div class="bg-amber-50 border border-amber-200 text-amber-800 text-xs rounded-lg p-3 mb-6">
+    <strong>Disclaimer Akuntansi:</strong> Struktur Chart of Accounts &amp; mapping akun mengikuti Permendagri 79/2018
+    dan PP 71/2010 secara umum. Wajib divalidasi oleh akuntan / pejabat keuangan BLUD dan regulasi pemerintah daerah
+    sebelum digunakan untuk laporan resmi (spec section 3 &amp; 41).
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <div class="bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+        <h3 class="text-sm font-semibold text-slate-700 mb-2">Periode Akuntansi Berjalan</h3>
+        <div class="text-lg font-semibold text-slate-800">@Model.CurrentPeriod</div>
+        <div class="text-xs text-slate-500">Tahun Anggaran @Model.FiscalYear</div>
+    </div>
+    <div class="bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+        <h3 class="text-sm font-semibold text-slate-700 mb-2">Roadmap Implementasi</h3>
+        <ol class="text-xs text-slate-600 space-y-1 list-decimal list-inside">
+            <li><span class="text-emerald-700 font-medium">Phase 1</span> &mdash; Auth, Master Data, Chart of Accounts, Period, Cost Center, Fund Source</li>
+            <li>Phase 2 &mdash; General Ledger, Journal, Trial Balance, Accounting Rules</li>
+            <li>Phase 3 &mdash; RBA, Budget, Budget Realization</li>
+            <li>Phase 4 &mdash; Revenue, Receivable, Cash, Bank</li>
+            <li>Phase 5 &mdash; Purchase, Payable, Expense, Inventory</li>
+            <li>Phase 6 &mdash; Fixed Asset, Depreciation</li>
+            <li>Phase 7 &mdash; Financial Reports</li>
+            <li>Phase 8 &mdash; Reconciliation, Closing, Audit Trail</li>
+            <li>Phase 9 &mdash; Dashboard, Reporting, Export</li>
+        </ol>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script>
+        const ctx = document.getElementById('trendChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'],
+                datasets: [
+                    { label: 'Pendapatan', data: [0,0,0,0,0,0,0,0,0,0,0,0], borderColor: '#059669', backgroundColor: 'rgba(5,150,105,0.1)', tension: 0.3 },
+                    { label: 'Beban', data: [0,0,0,0,0,0,0,0,0,0,0,0], borderColor: '#dc2626', backgroundColor: 'rgba(220,38,38,0.1)', tension: 0.3 }
+                ]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                scales: { y: { beginAtZero: true, ticks: { callback: v => 'Rp ' + v.toLocaleString('id-ID') } } },
+                plugins: { legend: { position: 'bottom' } }
+            }
+        });
+    </script>
+}

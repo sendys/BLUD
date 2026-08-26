@@ -1,0 +1,104 @@
+@{
+    var currentPath = Context.Request.Path.Value ?? "/";
+    bool IsActive(string page) => currentPath.Equals(page, StringComparison.OrdinalIgnoreCase)
+                                  || (page != "/" && currentPath.StartsWith(page, StringComparison.OrdinalIgnoreCase));
+}
+
+<!DOCTYPE html>
+<html lang="id" class="h-full bg-slate-50">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLUD-RSUD SIK @ViewData["Title"]</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body class="h-full">
+    <div class="flex h-full">
+        <!-- SIDEBAR (spec section 23) -->
+        <aside class="w-64 flex-shrink-0 bg-slate-900 text-slate-100 flex flex-col">
+            <div class="px-5 py-4 border-b border-slate-700">
+                <div class="text-xs uppercase tracking-wide text-slate-400">Sistem Informasi Keuangan</div>
+                <div class="text-lg font-semibold">BLUD-RSUD</div>
+                <div class="text-[11px] text-slate-400">PPK-BLUD &middot; SAP Akrual</div>
+            </div>
+
+            <nav class="flex-1 overflow-y-auto py-2 text-sm">
+                <a href="/Dashboard" class="flex items-center gap-3 px-5 py-2.5 hover:bg-slate-800 @(IsActive("/Dashboard") ? "bg-slate-800 border-l-4 border-emerald-400" : "border-l-4 border-transparent")">
+                    <span class="w-5 text-center">&#9632;</span> Dashboard
+                </a>
+
+                <div class="px-5 py-1.5 text-[10px] uppercase tracking-wider text-slate-500 mt-2">Perencanaan</div>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> RBA</a>
+
+                <div class="px-5 py-1.5 text-[10px] uppercase tracking-wider text-slate-500 mt-2">Operasional</div>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Pendapatan</a>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Belanja</a>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Kas &amp; Bank</a>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Piutang</a>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Hutang</a>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Persediaan</a>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Aset</a>
+
+                <div class="px-5 py-1.5 text-[10px] uppercase tracking-wider text-slate-500 mt-2">Akuntansi</div>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Jurnal</a>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Buku Besar</a>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Neraca Saldo</a>
+
+                <div class="px-5 py-1.5 text-[10px] uppercase tracking-wider text-slate-500 mt-2">Pelaporan</div>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Laporan Keuangan</a>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Rekonsiliasi</a>
+
+                <div class="px-5 py-1.5 text-[10px] uppercase tracking-wider text-slate-500 mt-2">Sistem</div>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Master Data</a>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Audit Trail</a>
+                <a href="#" class="flex items-center gap-3 px-5 py-2 hover:bg-slate-800 text-slate-400"><span class="w-5">&#9633;</span> Pengaturan</a>
+            </nav>
+
+            <div class="px-5 py-3 border-t border-slate-700 text-[11px] text-slate-500">
+                <div>&#9888; Versi Pengembangan</div>
+                <div>Validasi pejabat keuangan BLUD diperlukan.</div>
+            </div>
+        </aside>
+
+        <!-- MAIN -->
+        <div class="flex-1 flex flex-col overflow-hidden">
+            <header class="bg-white border-b border-slate-200 px-6 py-3 flex items-center justify-between">
+                <div>
+                    <div class="text-xs text-slate-500">Breadcrumb: <span class="text-slate-700">@ViewData["Breadcrumb"]</span></div>
+                    <h1 class="text-lg font-semibold text-slate-800">@ViewData["Title"]</h1>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="text-right text-xs">
+                        <div class="font-medium text-slate-700">@(User.Identity?.Name ?? "Guest")</div>
+                        <div class="text-slate-500">@DateTime.UtcNow.ToString("dd MMM yyyy HH:mm") UTC</div>
+                    </div>
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <form method="post" asp-page="/Account/Logout" class="inline">
+                            <button type="submit" class="text-xs px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded text-slate-700">Logout</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <a href="/Account/Login" class="text-xs px-3 py-1.5 bg-emerald-600 text-white rounded hover:bg-emerald-700">Login</a>
+                    }
+                </div>
+            </header>
+
+            <main class="flex-1 overflow-y-auto p-6">
+                @RenderBody()
+            </main>
+
+            <footer class="bg-white border-t border-slate-200 px-6 py-2 text-[11px] text-slate-500 flex justify-between">
+                <span>Sistem Informasi Keuangan &amp; Akuntansi BLUD-RSUD</span>
+                <span>Berdasarkan Permendagri 79/2018 &amp; PP 71/2010 &mdash; perlu validasi pejabat keuangan BLUD</span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="~/lib/alpinejs/cdn.min.js" defer></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BLUDRSUD.Application/BLUDRSUD.Application.csproj" />
+    <Project Path="src/BLUDRSUD.Domain/BLUDRSUD.Domain.csproj" />
+    <Project Path="src/BLUDRSUD.Infrastructure/BLUDRSUD.Infrastructure.csproj" />
+    <Project Path="src/BLUDRSUD.Web/BLUDRSUD.Web.csproj" />
+  </Folder>
+</Solution>

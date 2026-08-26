@@ -1,0 +1,15 @@
+D:\sandi\BLUD\src\BLUDRSUD.Application\bin\Debug\net10.0\BLUDRSUD.Application.deps.json
+D:\sandi\BLUD\src\BLUDRSUD.Application\bin\Debug\net10.0\BLUDRSUD.Application.dll
+D:\sandi\BLUD\src\BLUDRSUD.Application\bin\Debug\net10.0\BLUDRSUD.Application.pdb
+D:\sandi\BLUD\src\BLUDRSUD.Application\bin\Debug\net10.0\BLUDRSUD.Domain.dll
+D:\sandi\BLUD\src\BLUDRSUD.Application\bin\Debug\net10.0\BLUDRSUD.Domain.pdb
+D:\sandi\BLUD\src\BLUDRSUD.Application\obj\Debug\net10.0\BLUDRSUD.Application.csproj.AssemblyReference.cache
+D:\sandi\BLUD\src\BLUDRSUD.Application\obj\Debug\net10.0\BLUDRSUD.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\sandi\BLUD\src\BLUDRSUD.Application\obj\Debug\net10.0\BLUDRSUD.Application.AssemblyInfoInputs.cache
+D:\sandi\BLUD\src\BLUDRSUD.Application\obj\Debug\net10.0\BLUDRSUD.Application.AssemblyInfo.cs
+D:\sandi\BLUD\src\BLUDRSUD.Application\obj\Debug\net10.0\BLUDRSUD.Application.csproj.CoreCompileInputs.cache
+D:\sandi\BLUD\src\BLUDRSUD.Application\obj\Debug\net10.0\BLUDRSUD.6ADBB1B7.Up2Date
+D:\sandi\BLUD\src\BLUDRSUD.Application\obj\Debug\net10.0\BLUDRSUD.Application.dll
+D:\sandi\BLUD\src\BLUDRSUD.Application\obj\Debug\net10.0\refint\BLUDRSUD.Application.dll
+D:\sandi\BLUD\src\BLUDRSUD.Application\obj\Debug\net10.0\BLUDRSUD.Application.pdb
+D:\sandi\BLUD\src\BLUDRSUD.Application\obj\Debug\net10.0\ref\BLUDRSUD.Application.dll

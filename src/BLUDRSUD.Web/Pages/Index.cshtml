@@ -1,0 +1,9 @@
+@page "/"
+@model BLUDRSUD.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Beranda";
+}
+@{
+    // Root redirects to Dashboard. Auth handled by [Authorize] on Dashboard.
+    Response.Redirect("/Dashboard");
+}

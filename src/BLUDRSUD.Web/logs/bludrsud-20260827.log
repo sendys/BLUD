@@ -1,0 +1,300 @@
+2026-08-27 08:54:26.747 +07:00 [INF] HTTP GET /Account/Login responded 200 in 3.8475 ms
+2026-08-27 08:54:28.770 +07:00 [INF] User sandi logged in.
+2026-08-27 08:54:28.772 +07:00 [INF] HTTP POST /Account/Login responded 302 in 112.4911 ms
+2026-08-27 08:54:28.786 +07:00 [INF] HTTP GET /Dashboard responded 302 in 0.6378 ms
+2026-08-27 08:54:28.806 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 2.4696 ms
+2026-08-27 09:19:55.341 +07:00 [INF] Seeding complete.
+2026-08-27 09:20:37.849 +07:00 [WRN] Failed to determine the https port for redirect.
+2026-08-27 09:20:37.929 +07:00 [INF] HTTP POST /Account/Logout responded 400 in 60.1005 ms
+2026-08-27 09:20:41.275 +07:00 [INF] HTTP POST /Account/Logout responded 400 in 3.5655 ms
+2026-08-27 09:21:13.631 +07:00 [INF] Seeding complete.
+2026-08-27 09:21:18.460 +07:00 [WRN] Failed to determine the https port for redirect.
+2026-08-27 09:21:18.531 +07:00 [INF] User sandi logged out.
+2026-08-27 09:21:18.552 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 85.5740 ms
+2026-08-27 09:21:18.666 +07:00 [INF] HTTP GET /Account/Login responded 200 in 89.0190 ms
+2026-08-27 09:21:18.723 +07:00 [INF] HTTP GET /lib/tailwind/tailwind.min.css responded 404 in 0.7444 ms
+2026-08-27 09:21:29.780 +07:00 [INF] HTTP POST /Account/Login responded 200 in 216.2013 ms
+2026-08-27 09:21:29.848 +07:00 [INF] HTTP GET /lib/tailwind/tailwind.min.css responded 404 in 0.2829 ms
+2026-08-27 09:27:10.406 +07:00 [INF] User sandi logged in.
+2026-08-27 09:27:10.408 +07:00 [INF] HTTP POST /Account/Login responded 302 in 333.8912 ms
+2026-08-27 09:27:10.422 +07:00 [INF] HTTP GET /Dashboard responded 302 in 7.9993 ms
+2026-08-27 09:27:10.480 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 51.5906 ms
+2026-08-27 09:28:09.762 +07:00 [INF] User sandi logged out.
+2026-08-27 09:28:09.764 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 4.8584 ms
+2026-08-27 09:28:09.776 +07:00 [INF] HTTP GET /Account/Login responded 200 in 2.2937 ms
+2026-08-27 09:28:09.857 +07:00 [INF] HTTP GET /lib/tailwind/tailwind.min.css responded 404 in 0.1639 ms
+2026-08-27 09:28:11.360 +07:00 [INF] HTTP GET /Account/Login responded 200 in 2.2835 ms
+2026-08-27 09:28:11.404 +07:00 [INF] HTTP GET /lib/tailwind/tailwind.min.css responded 404 in 0.1501 ms
+2026-08-27 09:28:34.344 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.5940 ms
+2026-08-27 09:28:34.388 +07:00 [INF] HTTP GET /lib/tailwind/tailwind.min.css responded 404 in 0.1227 ms
+2026-08-27 09:30:33.770 +07:00 [INF] Seeding complete.
+2026-08-27 09:30:50.136 +07:00 [WRN] Failed to determine the https port for redirect.
+2026-08-27 09:30:50.203 +07:00 [INF] HTTP GET / responded 302 in 60.3438 ms
+2026-08-27 09:30:50.225 +07:00 [INF] HTTP GET /Dashboard responded 302 in 7.6101 ms
+2026-08-27 09:30:50.340 +07:00 [INF] HTTP GET /Account/Login responded 200 in 110.5516 ms
+2026-08-27 09:31:00.231 +07:00 [INF] HTTP GET /Account/Login responded 200 in 31.5027 ms
+2026-08-27 09:31:16.173 +07:00 [INF] User sandi logged in.
+2026-08-27 09:31:16.179 +07:00 [INF] HTTP POST /Account/Login responded 302 in 469.1590 ms
+2026-08-27 09:31:16.191 +07:00 [INF] HTTP GET /Dashboard responded 302 in 5.0549 ms
+2026-08-27 09:31:16.237 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 39.5253 ms
+2026-08-27 09:31:20.858 +07:00 [INF] User sandi logged out.
+2026-08-27 09:31:20.860 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 14.5410 ms
+2026-08-27 09:31:20.868 +07:00 [INF] HTTP GET /Account/Login responded 200 in 2.4077 ms
+2026-08-27 09:31:26.509 +07:00 [INF] HTTP GET /Dashboard responded 302 in 1.3966 ms
+2026-08-27 09:31:26.522 +07:00 [INF] HTTP GET /Account/Login responded 200 in 4.3470 ms
+2026-08-27 09:31:42.057 +07:00 [INF] HTTP GET /Account/Register responded 200 in 32.6378 ms
+2026-08-27 09:31:42.109 +07:00 [INF] HTTP GET /lib/tailwind/tailwind.min.css responded 404 in 0.7163 ms
+2026-08-27 09:32:48.391 +07:00 [INF] HTTP GET /Account/Login responded 200 in 4.2073 ms
+2026-08-27 09:32:52.397 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.6058 ms
+2026-08-27 09:32:53.151 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.8352 ms
+2026-08-27 09:33:03.286 +07:00 [INF] User sandi logged in.
+2026-08-27 09:33:03.288 +07:00 [INF] HTTP POST /Account/Login responded 302 in 173.8169 ms
+2026-08-27 09:33:03.296 +07:00 [INF] HTTP GET /Dashboard responded 302 in 0.6435 ms
+2026-08-27 09:33:03.304 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 2.4558 ms
+2026-08-27 09:33:26.781 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 1.8244 ms
+2026-08-27 09:33:32.518 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 2.1586 ms
+2026-08-27 09:33:34.419 +07:00 [INF] User sandi logged out.
+2026-08-27 09:33:34.420 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 2.7378 ms
+2026-08-27 09:33:34.430 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.2886 ms
+2026-08-27 09:33:44.107 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.3924 ms
+2026-08-27 09:34:27.678 +07:00 [INF] HTTP GET /Account/Login responded 200 in 3.0764 ms
+2026-08-27 09:34:29.718 +07:00 [INF] HTTP GET /Account/Register responded 200 in 6.0558 ms
+2026-08-27 09:34:29.775 +07:00 [INF] HTTP GET /lib/tailwind/tailwind.min.css responded 404 in 0.7379 ms
+2026-08-27 09:34:31.919 +07:00 [INF] HTTP GET /Account/Register responded 200 in 4.4282 ms
+2026-08-27 09:34:31.967 +07:00 [INF] HTTP GET /lib/tailwind/tailwind.min.css responded 404 in 0.1940 ms
+2026-08-27 09:34:54.472 +07:00 [INF] Seeding complete.
+2026-08-27 09:34:54.834 +07:00 [WRN] Failed to determine the https port for redirect.
+2026-08-27 09:34:54.957 +07:00 [INF] HTTP GET /Account/Register responded 200 in 116.5149 ms
+2026-08-27 09:35:05.384 +07:00 [INF] HTTP GET /Account/Login responded 200 in 55.5606 ms
+2026-08-27 09:35:08.116 +07:00 [INF] HTTP GET /Account/Register responded 200 in 11.6092 ms
+2026-08-27 09:37:31.149 +07:00 [INF] HTTP GET /Account/Login responded 200 in 4.5810 ms
+2026-08-27 09:37:34.857 +07:00 [INF] User sandi logged in.
+2026-08-27 09:37:34.863 +07:00 [INF] HTTP POST /Account/Login responded 302 in 341.4498 ms
+2026-08-27 09:37:34.884 +07:00 [INF] HTTP GET /Dashboard responded 302 in 12.2031 ms
+2026-08-27 09:37:34.951 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 58.3643 ms
+2026-08-27 09:37:37.235 +07:00 [INF] User sandi logged out.
+2026-08-27 09:37:37.240 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 19.0341 ms
+2026-08-27 09:37:37.255 +07:00 [INF] HTTP GET /Account/Login responded 200 in 3.6368 ms
+2026-08-27 09:37:39.899 +07:00 [INF] HTTP POST /Account/Login responded 200 in 209.6719 ms
+2026-08-27 09:37:54.513 +07:00 [WRN] Login failed for sandi8
+2026-08-27 09:37:54.516 +07:00 [INF] HTTP POST /Account/Login responded 200 in 7.8435 ms
+2026-08-27 09:38:12.061 +07:00 [INF] HTTP POST /Account/Login responded 200 in 3.7541 ms
+2026-08-27 09:38:18.716 +07:00 [INF] User sandi logged in.
+2026-08-27 09:38:18.718 +07:00 [INF] HTTP POST /Account/Login responded 302 in 91.5631 ms
+2026-08-27 09:38:18.731 +07:00 [INF] HTTP GET /Dashboard responded 302 in 2.2585 ms
+2026-08-27 09:38:18.748 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 3.0799 ms
+2026-08-27 09:38:56.923 +07:00 [INF] User sandi logged out.
+2026-08-27 09:38:56.925 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 2.8585 ms
+2026-08-27 09:38:56.932 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.0867 ms
+2026-08-27 09:39:27.431 +07:00 [INF] HTTP POST /Account/Login responded 429 in 1.1386 ms
+2026-08-27 09:39:34.351 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 1.8072 ms
+2026-08-27 09:39:36.566 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.3970 ms
+2026-08-27 09:39:39.743 +07:00 [INF] HTTP POST /Account/Login responded 429 in 0.7730 ms
+2026-08-27 09:39:42.755 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 0.8159 ms
+2026-08-27 09:39:49.456 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.5045 ms
+2026-08-27 09:39:54.239 +07:00 [INF] HTTP POST /Account/Login responded 429 in 0.1587 ms
+2026-08-27 09:41:36.740 +07:00 [INF] Seeding complete.
+2026-08-27 09:41:37.112 +07:00 [WRN] Failed to determine the https port for redirect.
+2026-08-27 09:41:37.409 +07:00 [INF] User sandi logged in.
+2026-08-27 09:41:37.419 +07:00 [INF] HTTP POST /Account/Login responded 302 in 302.5590 ms
+2026-08-27 09:41:37.452 +07:00 [INF] HTTP GET /Dashboard responded 302 in 14.3534 ms
+2026-08-27 09:41:37.538 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 78.4108 ms
+2026-08-27 09:41:39.422 +07:00 [INF] User sandi logged out.
+2026-08-27 09:41:39.425 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 30.0091 ms
+2026-08-27 09:41:39.493 +07:00 [INF] HTTP GET /Account/Login responded 200 in 59.8102 ms
+2026-08-27 09:41:40.857 +07:00 [INF] User sandi logged in.
+2026-08-27 09:41:40.861 +07:00 [INF] HTTP POST /Account/Login responded 302 in 170.0649 ms
+2026-08-27 09:41:40.872 +07:00 [INF] HTTP GET /Dashboard responded 302 in 1.7296 ms
+2026-08-27 09:41:40.890 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 3.2656 ms
+2026-08-27 09:41:42.616 +07:00 [INF] User sandi logged out.
+2026-08-27 09:41:42.619 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 3.6528 ms
+2026-08-27 09:41:42.631 +07:00 [INF] HTTP GET /Account/Login responded 200 in 2.9140 ms
+2026-08-27 09:41:44.483 +07:00 [INF] User sandi logged in.
+2026-08-27 09:41:44.486 +07:00 [INF] HTTP POST /Account/Login responded 302 in 77.0117 ms
+2026-08-27 09:41:44.496 +07:00 [INF] HTTP GET /Dashboard responded 302 in 1.7277 ms
+2026-08-27 09:41:44.512 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 3.6820 ms
+2026-08-27 09:41:46.640 +07:00 [INF] User sandi logged out.
+2026-08-27 09:41:46.643 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 4.4496 ms
+2026-08-27 09:41:46.656 +07:00 [INF] HTTP GET /Account/Login responded 200 in 3.4313 ms
+2026-08-27 09:41:48.656 +07:00 [INF] HTTP POST /Account/Login responded 200 in 80.2512 ms
+2026-08-27 09:41:53.213 +07:00 [INF] User sandi logged in.
+2026-08-27 09:41:53.216 +07:00 [INF] HTTP POST /Account/Login responded 302 in 83.0995 ms
+2026-08-27 09:41:53.223 +07:00 [INF] HTTP GET /Dashboard responded 302 in 0.5260 ms
+2026-08-27 09:41:53.234 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 2.0022 ms
+2026-08-27 09:41:54.938 +07:00 [INF] User sandi logged out.
+2026-08-27 09:41:54.941 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 4.2240 ms
+2026-08-27 09:41:54.953 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.8445 ms
+2026-08-27 09:42:01.488 +07:00 [INF] HTTP POST /Account/Login responded 429 in 0.7946 ms
+2026-08-27 09:42:12.923 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 0.6628 ms
+2026-08-27 09:42:20.164 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.5186 ms
+2026-08-27 09:42:23.804 +07:00 [INF] HTTP POST /Account/Login responded 429 in 0.4161 ms
+2026-08-27 09:42:30.637 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.8974 ms
+2026-08-27 09:42:56.560 +07:00 [INF] HTTP POST /Account/Login responded 429 in 0.1081 ms
+2026-08-27 09:45:42.259 +07:00 [INF] HTTP GET /Account/Login responded 200 in 2.1769 ms
+2026-08-27 09:47:24.136 +07:00 [INF] Seeding complete.
+2026-08-27 09:47:42.612 +07:00 [WRN] Failed to determine the https port for redirect.
+2026-08-27 09:47:43.005 +07:00 [INF] User sandi logged in.
+2026-08-27 09:47:43.015 +07:00 [INF] HTTP POST /Account/Login responded 302 in 396.9982 ms
+2026-08-27 09:47:43.045 +07:00 [INF] HTTP GET /Dashboard responded 302 in 14.1848 ms
+2026-08-27 09:47:43.142 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 89.4675 ms
+2026-08-27 09:47:45.283 +07:00 [INF] User sandi logged out.
+2026-08-27 09:47:45.288 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 41.6395 ms
+2026-08-27 09:47:45.365 +07:00 [INF] HTTP GET /Account/Login responded 200 in 68.8874 ms
+2026-08-27 09:47:47.120 +07:00 [INF] User sandi logged in.
+2026-08-27 09:47:47.123 +07:00 [INF] HTTP POST /Account/Login responded 302 in 196.9473 ms
+2026-08-27 09:47:47.134 +07:00 [INF] HTTP GET /Dashboard responded 302 in 1.9126 ms
+2026-08-27 09:47:47.148 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 5.5378 ms
+2026-08-27 09:47:48.520 +07:00 [INF] User sandi logged out.
+2026-08-27 09:47:48.521 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 4.5604 ms
+2026-08-27 09:47:48.534 +07:00 [INF] HTTP GET /Account/Login responded 200 in 2.5861 ms
+2026-08-27 09:47:51.017 +07:00 [INF] HTTP POST /Account/Login responded 200 in 123.5024 ms
+2026-08-27 09:47:54.750 +07:00 [INF] User sandi logged in.
+2026-08-27 09:47:54.756 +07:00 [INF] HTTP POST /Account/Login responded 302 in 113.4007 ms
+2026-08-27 09:47:54.772 +07:00 [INF] HTTP GET /Dashboard responded 302 in 1.7096 ms
+2026-08-27 09:47:54.789 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 2.0685 ms
+2026-08-27 09:47:56.278 +07:00 [INF] User sandi logged out.
+2026-08-27 09:47:56.281 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 4.6968 ms
+2026-08-27 09:47:56.292 +07:00 [INF] HTTP GET /Account/Login responded 200 in 2.6537 ms
+2026-08-27 09:47:57.885 +07:00 [INF] User sandi logged in.
+2026-08-27 09:47:57.888 +07:00 [INF] HTTP POST /Account/Login responded 302 in 122.5259 ms
+2026-08-27 09:47:57.899 +07:00 [INF] HTTP GET /Dashboard responded 302 in 0.7204 ms
+2026-08-27 09:47:57.910 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 3.2325 ms
+2026-08-27 09:47:58.894 +07:00 [INF] User sandi logged out.
+2026-08-27 09:47:58.899 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 5.5947 ms
+2026-08-27 09:47:58.911 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.7233 ms
+2026-08-27 09:48:02.830 +07:00 [INF] HTTP POST /Account/Login responded 429 in 3.1303 ms
+2026-08-27 09:48:10.294 +07:00 [INF] HTTP POST /Account/Login responded 429 in 0.4583 ms
+2026-08-27 09:48:12.161 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 0.8257 ms
+2026-08-27 09:48:13.845 +07:00 [INF] HTTP GET /Account/Login responded 200 in 2.0991 ms
+2026-08-27 09:48:18.038 +07:00 [INF] HTTP POST /Account/Login responded 429 in 0.1852 ms
+2026-08-27 09:48:21.648 +07:00 [INF] HTTP GET /Account/Login responded 200 in 3.6285 ms
+2026-08-27 09:48:26.293 +07:00 [INF] HTTP POST /Account/Login responded 429 in 0.1121 ms
+2026-08-27 09:49:34.590 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.5238 ms
+2026-08-27 09:49:36.599 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.6022 ms
+2026-08-27 09:49:39.500 +07:00 [INF] HTTP POST /Account/Login responded 429 in 0.3676 ms
+2026-08-27 09:50:04.587 +07:00 [INF] Seeding complete.
+2026-08-27 09:50:25.377 +07:00 [WRN] Failed to determine the https port for redirect.
+2026-08-27 09:50:25.446 +07:00 [INF] HTTP GET / responded 302 in 59.8225 ms
+2026-08-27 09:50:25.478 +07:00 [INF] HTTP GET /Dashboard responded 302 in 11.5479 ms
+2026-08-27 09:50:25.591 +07:00 [INF] HTTP GET /Account/Login responded 200 in 108.0755 ms
+2026-08-27 09:50:35.322 +07:00 [INF] HTTP GET /Account/Login responded 200 in 31.4979 ms
+2026-08-27 09:50:37.170 +07:00 [INF] User sandi logged in.
+2026-08-27 09:50:37.176 +07:00 [INF] HTTP POST /Account/Login responded 302 in 315.0317 ms
+2026-08-27 09:50:37.191 +07:00 [INF] HTTP GET /Dashboard responded 302 in 5.4428 ms
+2026-08-27 09:50:37.248 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 45.3109 ms
+2026-08-27 09:50:39.044 +07:00 [INF] User sandi logged out.
+2026-08-27 09:50:39.047 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 15.3282 ms
+2026-08-27 09:50:39.058 +07:00 [INF] HTTP GET /Account/Login responded 200 in 3.1060 ms
+2026-08-27 09:50:40.381 +07:00 [INF] User sandi logged in.
+2026-08-27 09:50:40.428 +07:00 [INF] HTTP POST /Account/Login responded 302 in 229.6235 ms
+2026-08-27 09:50:40.444 +07:00 [INF] HTTP GET /Dashboard responded 302 in 2.1535 ms
+2026-08-27 09:50:40.460 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 3.6850 ms
+2026-08-27 09:50:41.745 +07:00 [INF] User sandi logged out.
+2026-08-27 09:50:41.748 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 4.8933 ms
+2026-08-27 09:50:41.760 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.4572 ms
+2026-08-27 09:50:43.572 +07:00 [INF] User sandi logged in.
+2026-08-27 09:50:43.575 +07:00 [INF] HTTP POST /Account/Login responded 302 in 85.9147 ms
+2026-08-27 09:50:43.586 +07:00 [INF] HTTP GET /Dashboard responded 302 in 1.0255 ms
+2026-08-27 09:50:43.598 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 2.8822 ms
+2026-08-27 09:50:44.715 +07:00 [INF] User sandi logged out.
+2026-08-27 09:50:44.717 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 4.0706 ms
+2026-08-27 09:50:44.728 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.0804 ms
+2026-08-27 09:50:45.883 +07:00 [INF] User sandi logged in.
+2026-08-27 09:50:45.887 +07:00 [INF] HTTP POST /Account/Login responded 302 in 89.9070 ms
+2026-08-27 09:50:45.903 +07:00 [INF] HTTP GET /Dashboard responded 302 in 0.9999 ms
+2026-08-27 09:50:45.923 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 2.4936 ms
+2026-08-27 09:50:47.138 +07:00 [INF] User sandi logged out.
+2026-08-27 09:50:47.144 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 7.1354 ms
+2026-08-27 09:50:47.157 +07:00 [INF] HTTP GET /Account/Login responded 200 in 2.9111 ms
+2026-08-27 09:50:49.015 +07:00 [INF] HTTP POST /Account/Login responded 200 in 82.9871 ms
+2026-08-27 09:50:52.340 +07:00 [INF] HTTP POST /Account/Login responded 429 in 1.9815 ms
+2026-08-27 09:51:18.149 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.4400 ms
+2026-08-27 09:51:21.398 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.2476 ms
+2026-08-27 09:51:23.056 +07:00 [INF] HTTP POST /Account/Login responded 429 in 0.5633 ms
+2026-08-27 09:51:27.208 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 0.6602 ms
+2026-08-27 09:52:22.349 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.6826 ms
+2026-08-27 09:52:23.326 +07:00 [INF] HTTP POST /Account/Login responded 429 in 0.2718 ms
+2026-08-27 09:53:57.740 +07:00 [INF] Seeding complete.
+2026-08-27 09:54:03.441 +07:00 [WRN] Failed to determine the https port for redirect.
+2026-08-27 09:54:03.502 +07:00 [INF] HTTP GET / responded 302 in 53.8535 ms
+2026-08-27 09:54:03.530 +07:00 [INF] HTTP GET /Dashboard responded 302 in 11.4149 ms
+2026-08-27 09:54:03.660 +07:00 [INF] HTTP GET /Account/Login responded 200 in 124.1797 ms
+2026-08-27 09:54:10.293 +07:00 [INF] HTTP GET /Account/Login responded 200 in 38.9464 ms
+2026-08-27 09:54:12.291 +07:00 [INF] User sandi logged in.
+2026-08-27 09:54:12.299 +07:00 [INF] HTTP POST /Account/Login responded 302 in 405.7827 ms
+2026-08-27 09:54:12.313 +07:00 [INF] HTTP GET /Dashboard responded 302 in 4.1451 ms
+2026-08-27 09:54:12.369 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 48.2035 ms
+2026-08-27 09:54:14.004 +07:00 [INF] User sandi logged out.
+2026-08-27 09:54:14.008 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 19.7675 ms
+2026-08-27 09:54:14.019 +07:00 [INF] HTTP GET /Account/Login responded 200 in 2.5192 ms
+2026-08-27 09:54:15.524 +07:00 [INF] User sandi logged in.
+2026-08-27 09:54:15.528 +07:00 [INF] HTTP POST /Account/Login responded 302 in 203.8895 ms
+2026-08-27 09:54:15.541 +07:00 [INF] HTTP GET /Dashboard responded 302 in 2.6000 ms
+2026-08-27 09:54:15.554 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 5.4728 ms
+2026-08-27 09:54:16.719 +07:00 [INF] User sandi logged out.
+2026-08-27 09:54:16.724 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 5.7883 ms
+2026-08-27 09:54:16.737 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.5090 ms
+2026-08-27 09:54:21.814 +07:00 [INF] User admin logged in.
+2026-08-27 09:54:21.817 +07:00 [INF] HTTP POST /Account/Login responded 302 in 153.3524 ms
+2026-08-27 09:54:21.980 +07:00 [INF] HTTP GET /Dashboard responded 200 in 154.4849 ms
+2026-08-27 09:54:24.615 +07:00 [INF] User admin logged out.
+2026-08-27 09:54:24.619 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 5.5696 ms
+2026-08-27 09:54:24.631 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.2240 ms
+2026-08-27 09:54:26.085 +07:00 [INF] User admin logged in.
+2026-08-27 09:54:26.088 +07:00 [INF] HTTP POST /Account/Login responded 302 in 112.8167 ms
+2026-08-27 09:54:26.108 +07:00 [INF] HTTP GET /Dashboard responded 200 in 10.8544 ms
+2026-08-27 09:54:27.512 +07:00 [INF] User admin logged out.
+2026-08-27 09:54:27.516 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 5.5390 ms
+2026-08-27 09:54:27.528 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.5962 ms
+2026-08-27 09:54:28.808 +07:00 [INF] User admin logged in.
+2026-08-27 09:54:28.814 +07:00 [INF] HTTP POST /Account/Login responded 302 in 111.0147 ms
+2026-08-27 09:54:28.849 +07:00 [INF] HTTP GET /Dashboard responded 200 in 16.7956 ms
+2026-08-27 09:54:32.704 +07:00 [INF] User admin logged out.
+2026-08-27 09:54:32.707 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 4.2360 ms
+2026-08-27 09:54:32.715 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.6265 ms
+2026-08-27 09:54:36.572 +07:00 [INF] HTTP POST /Account/Login responded 302 in 1.3913 ms
+2026-08-27 09:54:36.582 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.6964 ms
+2026-08-27 09:54:48.369 +07:00 [INF] HTTP POST /Account/Login responded 302 in 0.3589 ms
+2026-08-27 09:54:48.379 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.8018 ms
+2026-08-27 09:54:57.880 +07:00 [INF] HTTP POST /Account/Login responded 302 in 0.1759 ms
+2026-08-27 09:54:57.889 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.3518 ms
+2026-08-27 09:55:00.437 +07:00 [INF] HTTP POST /Account/Login responded 302 in 0.1796 ms
+2026-08-27 09:55:00.446 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.3899 ms
+2026-08-27 10:10:01.339 +07:00 [INF] User admin logged in.
+2026-08-27 10:10:01.355 +07:00 [INF] HTTP POST /Account/Login responded 302 in 92.1887 ms
+2026-08-27 10:10:01.373 +07:00 [INF] HTTP GET /Dashboard responded 200 in 7.5481 ms
+2026-08-27 10:10:05.195 +07:00 [INF] User admin logged out.
+2026-08-27 10:10:05.197 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 2.7304 ms
+2026-08-27 10:10:05.204 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.2036 ms
+2026-08-27 10:10:06.474 +07:00 [INF] User admin logged in.
+2026-08-27 10:10:06.478 +07:00 [INF] HTTP POST /Account/Login responded 302 in 95.2497 ms
+2026-08-27 10:10:06.499 +07:00 [INF] HTTP GET /Dashboard responded 200 in 10.4926 ms
+2026-08-27 10:10:08.019 +07:00 [INF] User admin logged out.
+2026-08-27 10:10:08.022 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 3.1174 ms
+2026-08-27 10:10:08.031 +07:00 [INF] HTTP GET /Account/Login responded 200 in 2.4048 ms
+2026-08-27 10:10:09.251 +07:00 [INF] User admin logged in.
+2026-08-27 10:10:09.254 +07:00 [INF] HTTP POST /Account/Login responded 302 in 112.6613 ms
+2026-08-27 10:10:09.272 +07:00 [INF] HTTP GET /Dashboard responded 200 in 10.5326 ms
+2026-08-27 10:10:10.785 +07:00 [INF] User admin logged out.
+2026-08-27 10:10:10.786 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 1.8298 ms
+2026-08-27 10:10:10.794 +07:00 [INF] HTTP GET /Account/Login responded 200 in 0.8679 ms
+2026-08-27 10:10:12.805 +07:00 [INF] User admin logged in.
+2026-08-27 10:10:12.808 +07:00 [INF] HTTP POST /Account/Login responded 302 in 923.4962 ms
+2026-08-27 10:10:12.826 +07:00 [INF] HTTP GET /Dashboard responded 200 in 10.2944 ms
+2026-08-27 10:10:14.705 +07:00 [INF] User admin logged out.
+2026-08-27 10:10:14.706 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 2.2909 ms
+2026-08-27 10:10:14.714 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.3558 ms
+2026-08-27 10:10:16.134 +07:00 [INF] User admin logged in.
+2026-08-27 10:10:16.138 +07:00 [INF] HTTP POST /Account/Login responded 302 in 75.4464 ms
+2026-08-27 10:10:16.157 +07:00 [INF] HTTP GET /Dashboard responded 200 in 11.3793 ms
+2026-08-27 10:10:17.756 +07:00 [INF] User admin logged out.
+2026-08-27 10:10:17.757 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 1.9112 ms
+2026-08-27 10:10:17.765 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.4452 ms
+2026-08-27 10:10:19.054 +07:00 [INF] HTTP POST /Account/Login responded 302 in 0.1089 ms
+2026-08-27 10:10:19.062 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.2632 ms
+2026-08-27 11:57:40.975 +07:00 [INF] User admin logged in.
+2026-08-27 11:57:40.978 +07:00 [INF] HTTP POST /Account/Login responded 302 in 83.2691 ms
+2026-08-27 11:57:40.996 +07:00 [INF] HTTP GET /Dashboard responded 200 in 11.5852 ms
+2026-08-27 11:57:45.225 +07:00 [INF] User admin logged out.
+2026-08-27 11:57:45.227 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 2.0962 ms
+2026-08-27 11:57:45.234 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.0482 ms

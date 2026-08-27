@@ -17,3 +17,4 @@ D:\sandi\BLUD\src\BLUDRSUD.Infrastructure\obj\Debug\net10.0\refint\BLUDRSUD.Infr
 D:\sandi\BLUD\src\BLUDRSUD.Infrastructure\obj\Debug\net10.0\BLUDRSUD.Infrastructure.pdb
 D:\sandi\BLUD\src\BLUDRSUD.Infrastructure\obj\Debug\net10.0\BLUDRSUD.Infrastructure.genruntimeconfig.cache
 D:\sandi\BLUD\src\BLUDRSUD.Infrastructure\obj\Debug\net10.0\ref\BLUDRSUD.Infrastructure.dll
+D:\sandi\BLUD\src\BLUDRSUD.Infrastructure\obj\Debug\net10.0\BLUDRSUD.Infrastructure.sourcelink.json

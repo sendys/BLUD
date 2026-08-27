@@ -131,3 +131,37 @@
 2026-08-26 12:36:37.600 +07:00 [INF] User admin logged out.
 2026-08-26 12:36:37.602 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 4.1319 ms
 2026-08-26 12:36:37.613 +07:00 [INF] HTTP GET /Account/Login responded 429 in 1.0371 ms
+2026-08-26 12:39:02.170 +07:00 [INF] Seeding complete.
+2026-08-26 12:39:02.436 +07:00 [WRN] Failed to determine the https port for redirect.
+2026-08-26 12:39:02.467 +07:00 [INF] HTTP GET /Dashboard responded 302 in 24.1113 ms
+2026-08-26 12:39:02.592 +07:00 [INF] HTTP GET /Account/Login responded 200 in 107.7198 ms
+2026-08-26 12:39:05.035 +07:00 [INF] User admin logged in.
+2026-08-26 12:39:05.042 +07:00 [INF] HTTP POST /Account/Login responded 302 in 423.1363 ms
+2026-08-26 12:39:05.304 +07:00 [INF] HTTP GET /Dashboard responded 200 in 250.8505 ms
+2026-08-26 12:39:06.869 +07:00 [INF] User admin logged out.
+2026-08-26 12:39:06.872 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 25.8014 ms
+2026-08-26 12:39:06.904 +07:00 [INF] HTTP GET /Account/Login responded 200 in 19.2929 ms
+2026-08-26 12:39:06.975 +07:00 [INF] HTTP GET /lib/tailwind/tailwind.min.css responded 404 in 0.7816 ms
+2026-08-26 12:39:08.748 +07:00 [INF] User admin logged in.
+2026-08-26 12:39:08.753 +07:00 [INF] HTTP POST /Account/Login responded 302 in 115.3468 ms
+2026-08-26 12:39:08.786 +07:00 [INF] HTTP GET /Dashboard responded 200 in 23.9218 ms
+2026-08-26 12:39:10.393 +07:00 [INF] User admin logged out.
+2026-08-26 12:39:10.403 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 15.1330 ms
+2026-08-26 12:39:10.421 +07:00 [INF] HTTP GET /Account/Login responded 200 in 6.0776 ms
+2026-08-26 12:39:10.481 +07:00 [INF] HTTP GET /lib/tailwind/tailwind.min.css responded 404 in 0.2755 ms
+2026-08-26 12:39:15.786 +07:00 [INF] User sandi logged in.
+2026-08-26 12:39:15.788 +07:00 [INF] HTTP POST /Account/Login responded 302 in 94.2869 ms
+2026-08-26 12:39:15.798 +07:00 [INF] HTTP GET /Dashboard responded 302 in 1.6384 ms
+2026-08-26 12:39:15.824 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 17.1955 ms
+2026-08-26 12:39:19.487 +07:00 [INF] User sandi logged out.
+2026-08-26 12:39:19.491 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 5.5962 ms
+2026-08-26 12:39:19.503 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.4001 ms
+2026-08-26 12:39:19.568 +07:00 [INF] HTTP GET /lib/tailwind/tailwind.min.css responded 404 in 0.1299 ms
+2026-08-26 12:39:22.156 +07:00 [INF] User sandi logged in.
+2026-08-26 12:39:22.159 +07:00 [INF] HTTP POST /Account/Login responded 302 in 88.3634 ms
+2026-08-26 12:39:22.169 +07:00 [INF] HTTP GET /Dashboard responded 302 in 0.8565 ms
+2026-08-26 12:39:22.179 +07:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 3.1991 ms
+2026-08-26 12:39:26.008 +07:00 [INF] User sandi logged out.
+2026-08-26 12:39:26.010 +07:00 [INF] HTTP POST /Account/Logout responded 302 in 3.2286 ms
+2026-08-26 12:39:26.020 +07:00 [INF] HTTP GET /Account/Login responded 200 in 1.0527 ms
+2026-08-26 12:39:26.081 +07:00 [INF] HTTP GET /lib/tailwind/tailwind.min.css responded 404 in 0.1213 ms

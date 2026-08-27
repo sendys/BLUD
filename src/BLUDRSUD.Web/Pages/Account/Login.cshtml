@@ -1,52 +1,144 @@
 @page "/Account/Login"
 @model BLUDRSUD.Web.Pages.Account.LoginModel
+@inject Microsoft.Extensions.Hosting.IHostEnvironment HostEnvironment
 @{
     Layout = null;
     ViewData["Title"] = "Login";
+    var authenticationErrors = ModelState[string.Empty]?.Errors
+        .Select(error => error.ErrorMessage)
+        .Where(message => !string.IsNullOrWhiteSpace(message))
+        .ToArray() ?? Array.Empty<string>();
 }
 <!DOCTYPE html>
-<html lang="id" class="h-full bg-slate-100">
+<html lang="id" class="h-full bg-slate-50">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login &mdash; BLUD-RSUD SIK</title>
-    <link rel="stylesheet" href="~/lib/tailwind/tailwind.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 </head>
-<body class="h-full flex items-center justify-center p-4">
-    <div class="w-full max-w-md">
-        <div class="bg-white rounded-lg shadow-md border border-slate-200 p-8">
-            <div class="text-center mb-6">
-                <div class="text-xs uppercase tracking-wide text-slate-400">Sistem Informasi Keuangan</div>
-                <div class="text-2xl font-semibold text-slate-800">BLUD-RSUD</div>
-                <div class="text-xs text-slate-500">PPK-BLUD &middot; SAP Akrual</div>
-            </div>
+<body class="min-h-full text-slate-800">
+    <main class="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-10">
+        <div class="w-full max-w-5xl overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60 lg:grid lg:grid-cols-2">
+            <section class="relative overflow-hidden bg-slate-900 px-7 py-10 text-white sm:px-12 sm:py-12 lg:flex lg:min-h-[620px] lg:flex-col lg:justify-between">
+                <div class="absolute -right-20 -top-20 h-56 w-56 rounded-full border-[24px] border-emerald-500/10"></div>
+                <div class="absolute -bottom-24 -left-24 h-64 w-64 rounded-full border-[28px] border-emerald-400/10"></div>
+                <div class="relative">
+                    <div class="mb-12 flex items-center gap-3">
+                        <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-500 text-xl font-bold text-white shadow-lg shadow-emerald-950/30" aria-hidden="true">B</div>
+                        <div>
+                            <div class="text-[10px] font-semibold uppercase tracking-[0.2em] text-emerald-300">BLUD-RSUD</div>
+                            <div class="text-xs text-slate-300">Sistem Informasi Keuangan</div>
+                        </div>
+                    </div>
+                    <p class="mb-3 text-sm font-medium uppercase tracking-[0.18em] text-emerald-300">Keuangan Terintegrasi</p>
+                    <h1 class="max-w-sm text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">Kelola keuangan dengan lebih terarah.</h1>
+                    <p class="mt-5 max-w-sm text-sm leading-6 text-slate-300">Platform pengelolaan keuangan BLUD-RSUD berbasis akuntansi akrual.</p>
+                </div>
+                <div class="relative mt-12 flex items-center gap-3 text-xs text-slate-400 lg:mt-0">
+                    <span class="h-px w-8 bg-emerald-500"></span>
+                    <span>PPK-BLUD <span class="mx-1 text-slate-600">&middot;</span> SAP Akrual</span>
+                </div>
+            </section>
 
-            <form method="post">
+            <section class="px-7 py-9 sm:px-12 sm:py-12 lg:flex lg:flex-col lg:justify-center">
+                <div class="mb-8">
+                    <p class="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-600">Portal Akses</p>
+                    <h2 class="text-2xl font-semibold tracking-tight text-slate-900">Selamat datang</h2>
+                    <p class="mt-2 text-sm leading-6 text-slate-500">Masuk untuk melanjutkan ke Sistem Informasi Keuangan BLUD-RSUD.</p>
+                </div>
+
                 @if (!string.IsNullOrWhiteSpace(Model.SuccessMessage))
                 {
-                    <div class="text-emerald-700 bg-emerald-50 border border-emerald-200 rounded p-3 text-sm mb-4">@Model.SuccessMessage</div>
+                    <div class="mb-5 rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-800" role="status">@Model.SuccessMessage</div>
                 }
-                <div asp-validation-summary="ModelOnly" class="text-red-600 text-sm mb-3"></div>
-                <div class="mb-4">
-                    <label asp-for="Input.Username" class="block text-sm font-medium text-slate-700 mb-1">Username</label>
-                    <input asp-for="Input.Username" class="w-full px-3 py-2 border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500" autofocus />
-                    <span asp-validation-for="Input.Username" class="text-red-600 text-xs"></span>
-                </div>
-                <div class="mb-5">
-                    <label asp-for="Input.Password" class="block text-sm font-medium text-slate-700 mb-1">Password</label>
-                    <input asp-for="Input.Password" type="password" class="w-full px-3 py-2 border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500" />
-                    <span asp-validation-for="Input.Password" class="text-red-600 text-xs"></span>
-                </div>
-                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 rounded transition">Masuk</button>
-                <input type="hidden" asp-for="ReturnUrl" />
-            </form>
-            <p class="text-center text-sm text-slate-500 mt-5">
-                Belum memiliki akun? <a href="/Account/Register" class="font-medium text-emerald-700 hover:text-emerald-800">Daftar</a>
-            </p>
+
+                <form id="loginForm" method="post">
+                    <div class="mb-5">
+                        <label asp-for="Input.Username" class="mb-2 block text-sm font-medium text-slate-700">Username</label>
+                        <div class="relative">
+                            <span class="pointer-events-none absolute inset-y-0 left-0 flex w-11 items-center justify-center text-slate-400" aria-hidden="true">
+                                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+                            </span>
+                            <input asp-for="Input.Username" autocomplete="username" placeholder="Masukkan username" autofocus class="block w-full rounded-lg border border-slate-300 bg-white py-3 pl-11 pr-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10" />
+                        </div>
+                        <span asp-validation-for="Input.Username" class="mt-1 block text-xs text-red-600"></span>
+                    </div>
+
+                    <div class="mb-6">
+                        <label asp-for="Input.Password" class="mb-2 block text-sm font-medium text-slate-700">Password</label>
+                        <div class="relative">
+                            <span class="pointer-events-none absolute inset-y-0 left-0 flex w-11 items-center justify-center text-slate-400" aria-hidden="true">
+                                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+                            </span>
+                            <input id="passwordInput" asp-for="Input.Password" type="password" autocomplete="current-password" placeholder="Masukkan password" class="block w-full rounded-lg border border-slate-300 bg-white py-3 pl-11 pr-12 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10" />
+                            <button id="passwordToggle" type="button" class="absolute inset-y-0 right-0 flex w-11 items-center justify-center text-slate-400 transition hover:text-emerald-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500" aria-label="Tampilkan password" aria-pressed="false">
+                                <svg id="eyeIcon" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg>
+                            </button>
+                        </div>
+                        <span asp-validation-for="Input.Password" class="mt-1 block text-xs text-red-600"></span>
+                    </div>
+
+                    <button id="loginButton" type="submit" class="flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-600 px-4 py-3 text-sm font-semibold text-white shadow-sm shadow-emerald-600/20 transition hover:bg-emerald-700 focus:outline-none focus:ring-4 focus:ring-emerald-500/20 active:bg-emerald-800 disabled:cursor-not-allowed disabled:opacity-70">
+                        <span id="loginButtonLabel">Masuk</span>
+                        <svg id="loginArrow" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+                    </button>
+                    <input type="hidden" asp-for="ReturnUrl" />
+                </form>
+
+                <p class="mt-7 text-center text-sm text-slate-500">Belum memiliki akun? <a href="/Account/Register" class="font-semibold text-emerald-700 transition hover:text-emerald-800 hover:underline">Daftar</a></p>
+                <p class="mt-10 text-center text-[11px] text-slate-400">&copy; 2026 BLUD-RSUD <span class="mx-1">&middot;</span> Sistem Informasi Keuangan</p>
+            </section>
         </div>
-        <p class="text-center text-[11px] text-slate-400 mt-4">
-            Default admin: <code>admin</code> / <code>Blud@2026!</code> &mdash; ganti segera setelah login.
-        </p>
-    </div>
+    </main>
+
+    @if (HostEnvironment.IsDevelopment() && authenticationErrors.Length == 0)
+    {
+        <div class="mx-auto -mt-10 max-w-5xl px-4 pb-4 text-center text-[11px] text-slate-400">Development: default admin tersedia melalui seeder. Ganti password setelah login.</div>
+    }
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        const passwordInput = document.getElementById('passwordInput');
+        const passwordToggle = document.getElementById('passwordToggle');
+        const loginForm = document.getElementById('loginForm');
+        const loginButton = document.getElementById('loginButton');
+        const loginButtonLabel = document.getElementById('loginButtonLabel');
+        const loginArrow = document.getElementById('loginArrow');
+
+        passwordToggle.addEventListener('click', () => {
+            const isVisible = passwordInput.type === 'text';
+            passwordInput.type = isVisible ? 'password' : 'text';
+            passwordToggle.setAttribute('aria-label', isVisible ? 'Tampilkan password' : 'Sembunyikan password');
+            passwordToggle.setAttribute('aria-pressed', String(!isVisible));
+        });
+
+        loginForm.addEventListener('submit', () => {
+            loginButton.disabled = true;
+            loginButtonLabel.textContent = 'Memproses...';
+            loginArrow.classList.add('hidden');
+        });
+
+        const authenticationErrors = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(authenticationErrors));
+        const rateLimited = new URLSearchParams(window.location.search).get('rateLimited') === '1';
+        if (rateLimited) {
+            window.history.replaceState({}, document.title, window.location.pathname);
+            Swal.fire({
+                icon: 'warning',
+                title: 'Terlalu Banyak Percobaan',
+                text: 'Batas percobaan login tercapai. Silakan tunggu beberapa menit sebelum mencoba lagi.',
+                confirmButtonText: 'Mengerti',
+                confirmButtonColor: '#059669'
+            });
+        } else if (authenticationErrors.length > 0) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Login Gagal',
+                text: authenticationErrors.join(' '),
+                confirmButtonText: 'Coba Lagi',
+                confirmButtonColor: '#059669'
+            });
+        }
+    </script>
 </body>
 </html>

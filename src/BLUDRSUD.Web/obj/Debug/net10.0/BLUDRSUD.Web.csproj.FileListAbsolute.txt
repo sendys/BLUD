@@ -146,3 +146,4 @@ D:\sandi\BLUD\src\BLUDRSUD.Web\obj\Debug\net10.0\refint\BLUDRSUD.Web.dll
 D:\sandi\BLUD\src\BLUDRSUD.Web\obj\Debug\net10.0\BLUDRSUD.Web.pdb
 D:\sandi\BLUD\src\BLUDRSUD.Web\obj\Debug\net10.0\BLUDRSUD.Web.genruntimeconfig.cache
 D:\sandi\BLUD\src\BLUDRSUD.Web\obj\Debug\net10.0\ref\BLUDRSUD.Web.dll
+D:\sandi\BLUD\src\bludrsud.web\obj\Debug\net10.0\BLUDRSUD.Web.sourcelink.json

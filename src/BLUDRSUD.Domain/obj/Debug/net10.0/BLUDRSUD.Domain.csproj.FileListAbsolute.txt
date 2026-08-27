@@ -9,3 +9,4 @@ D:\sandi\BLUD\src\BLUDRSUD.Domain\obj\Debug\net10.0\BLUDRSUD.Domain.dll
 D:\sandi\BLUD\src\BLUDRSUD.Domain\obj\Debug\net10.0\refint\BLUDRSUD.Domain.dll
 D:\sandi\BLUD\src\BLUDRSUD.Domain\obj\Debug\net10.0\BLUDRSUD.Domain.pdb
 D:\sandi\BLUD\src\BLUDRSUD.Domain\obj\Debug\net10.0\ref\BLUDRSUD.Domain.dll
+D:\sandi\BLUD\src\BLUDRSUD.Domain\obj\Debug\net10.0\BLUDRSUD.Domain.sourcelink.json

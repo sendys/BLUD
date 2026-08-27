@@ -76,8 +76,8 @@
                     </div>
                     @if (User.Identity?.IsAuthenticated == true)
                     {
-                        <form method="post" asp-page="/Account/Logout" class="inline">
-                            <button type="submit" class="text-xs px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded text-slate-700">Logout</button>
+                        <form id="logoutForm" method="post" asp-page="/Account/Logout" class="inline">
+                            <button id="logoutButton" type="submit" class="text-xs px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded text-slate-700">Logout</button>
                         </form>
                     }
                     else
@@ -99,6 +99,16 @@
     </div>
 
     <script src="~/lib/alpinejs/cdn.min.js" defer></script>
+    <script>
+        document.getElementById('logoutForm')?.addEventListener('submit', function () {
+            const button = document.getElementById('logoutButton');
+            if (button) {
+                button.disabled = true;
+                button.textContent = 'Keluar...';
+                button.classList.add('opacity-75', 'cursor-not-allowed');
+            }
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

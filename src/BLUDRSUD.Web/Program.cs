@@ -88,6 +88,11 @@ try
             return RateLimitPartition.GetNoLimiter("excluded");
         });
         options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+        options.OnRejected = (context, _) =>
+        {
+            context.HttpContext.Response.Redirect("/Account/Login?rateLimited=1");
+            return ValueTask.CompletedTask;
+        };
     });
 
     // MVC + Razor Pages.
